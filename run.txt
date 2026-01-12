@@ -1,0 +1,20 @@
+CUDA_VISIBLE_DEVICES=0 python run_binary_supervised_cv_subject_level.py \
+  --root_path "/usr/data/yeqi3/biot_processed_fixed/type_new" \
+  --pretrain_model_path "/home/yeqi3/cyr/code/BIOT/pretrained-models/EEG-six-datasets-18-channels.ckpt" \
+  --dataset "type_new" \
+  --in_channels 18 \
+  --n_classes 2 \
+  --batch_size 32 \
+  --epochs 50
+
+
+======================================================================================================================
+
+CUDA_VISIBLE_DEVICES=6 python run_subject_specific_cv.py \
+  --root_path "/usr/data/yeqi3/biot_processed_fixed/type_new" \
+  --pretrain_model_path "/home/yeqi3/cyr/code/BIOT/pretrained-models/EEG-six-datasets-18-channels.ckpt" \
+  --dataset "type_new" \
+  --in_channels 18 \
+  --n_classes 2 \
+  --batch_size 32 \
+  --epochs 50
