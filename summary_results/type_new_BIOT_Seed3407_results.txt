@@ -1,0 +1,23 @@
+Experiment Summary
+==================
+Date: 2026-01-16 09:56:24
+Model: BIOT
+Seed: 3407
+Dataset: type_new
+Parameters: {'root_path': '/usr/data/yeqi3/biot_processed_fixed/type_new', 'dataset': 'type_new', 'model': 'BIOT', 'seed': 3407, 'in_channels': 18, 'n_classes': 2, 'epochs': 50, 'batch_size': 32, 'lr': 0.0001, 'weight_decay': 1e-05, 'num_workers': 4, 'sampling_rate': 200, 'token_size': 200, 'hop_length': 100, 'sample_length': 10, 'pretrain_model_path': '/home/yeqi3/cyr/code/BIOT/pretrained-models/EEG-six-datasets-18-channels.ckpt', 'save_dir': '/usr/data/yeqi3/biot_results'}
+
+Metrics (Mean ± Std over 5 Folds):
+accuracy            : 0.6860 ± 0.0366
+roc_auc             : 0.6742 ± 0.0300
+pr_auc              : 0.8037 ± 0.0272
+balanced_accuracy   : 0.6004 ± 0.0308
+cohen_kappa         : 0.2109 ± 0.0510
+f1_weighted         : 0.6635 ± 0.0368
+
+Raw Values per Fold:
+accuracy: [0.624078631401062, 0.6752503514289856, 0.715629518032074, 0.68569415807724, 0.7291666865348816]
+roc_auc: [0.6734888553619385, 0.6360901594161987, 0.648989737033844, 0.6930592060089111, 0.719391405582428]
+pr_auc: [0.8041222095489502, 0.7558712959289551, 0.8086051344871521, 0.8098700046539307, 0.8402540683746338]
+balanced_accuracy: [0.6315412521362305, 0.5778720378875732, 0.59168541431427, 0.5605552196502686, 0.6403741240501404]
+cohen_kappa: [0.22789549827575684, 0.17751064896583557, 0.20609773695468903, 0.14634758234024048, 0.296875]
+f1_weighted: [0.6391765475273132, 0.6386163234710693, 0.6936815977096558, 0.6257951259613037, 0.7204297184944153]

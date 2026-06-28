@@ -1,0 +1,23 @@
+Experiment Summary
+==================
+Date: 2026-01-16 03:52:58
+Model: STTransformer
+Seed: 0
+Dataset: type
+Parameters: {'root_path': '/usr/data/yeqi3/biot_processed_fixed/type', 'dataset': 'type', 'model': 'STTransformer', 'seed': 0, 'in_channels': 18, 'n_classes': 2, 'epochs': 50, 'batch_size': 32, 'lr': 0.0001, 'weight_decay': 1e-05, 'num_workers': 4, 'sampling_rate': 200, 'token_size': 200, 'hop_length': 100, 'sample_length': 10, 'pretrain_model_path': '', 'save_dir': '/usr/data/yeqi3/biot_results'}
+
+Metrics (Mean ± Std over 5 Folds):
+accuracy            : 0.4971 ± 0.1331
+roc_auc             : 0.5413 ± 0.0254
+pr_auc              : 0.6682 ± 0.0079
+balanced_accuracy   : 0.5093 ± 0.0190
+cohen_kappa         : 0.0173 ± 0.0350
+f1_weighted         : 0.3750 ± 0.1650
+
+Raw Values per Fold:
+accuracy: [0.6315401792526245, 0.3195876181125641, 0.6365475654602051, 0.36273208260536194, 0.5351426601409912]
+roc_auc: [0.5365379452705383, 0.494244784116745, 0.5560477375984192, 0.5533084869384766, 0.5661287903785706]
+pr_auc: [0.6570813059806824, 0.6812281012535095, 0.6694581508636475, 0.6641047596931458, 0.6693313717842102]
+balanced_accuracy: [0.5, 0.49934205412864685, 0.5, 0.5, 0.5474051833152771]
+cohen_kappa: [0.0, -0.0008417913340963423, 0.0, 0.0, 0.08738657832145691]
+f1_weighted: [0.48891592025756836, 0.15618431568145752, 0.4951799511909485, 0.193104088306427, 0.5416139960289001]

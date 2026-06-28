@@ -1,0 +1,23 @@
+Experiment Summary
+==================
+Date: 2026-01-16 01:58:22
+Model: SPaRCNet
+Seed: 1
+Dataset: read_new
+Parameters: {'root_path': '/usr/data/yeqi3/biot_processed_fixed/read_new', 'dataset': 'read_new', 'model': 'SPaRCNet', 'seed': 1, 'in_channels': 18, 'n_classes': 2, 'epochs': 50, 'batch_size': 32, 'lr': 0.0001, 'weight_decay': 1e-05, 'num_workers': 4, 'sampling_rate': 200, 'token_size': 200, 'hop_length': 100, 'sample_length': 10, 'pretrain_model_path': '', 'save_dir': '/usr/data/yeqi3/biot_results'}
+
+Metrics (Mean ± Std over 5 Folds):
+accuracy            : 0.6112 ± 0.0280
+roc_auc             : 0.6352 ± 0.0353
+pr_auc              : 0.7024 ± 0.0341
+balanced_accuracy   : 0.5918 ± 0.0186
+cohen_kappa         : 0.1857 ± 0.0410
+f1_weighted         : 0.6054 ± 0.0191
+
+Raw Values per Fold:
+accuracy: [0.5781427025794983, 0.6004307866096497, 0.6329426169395447, 0.5907407402992249, 0.6538695693016052]
+roc_auc: [0.5959942936897278, 0.6377812027931213, 0.6341062784194946, 0.6096556782722473, 0.6986914873123169]
+pr_auc: [0.6554396152496338, 0.7481159567832947, 0.7164214253425598, 0.6711614727973938, 0.7206650376319885]
+balanced_accuracy: [0.5810129046440125, 0.5791857242584229, 0.5786079168319702, 0.5926131010055542, 0.6276780962944031]
+cohen_kappa: [0.15738986432552338, 0.15695437788963318, 0.16836458444595337, 0.17988400161266327, 0.26607707142829895]
+f1_weighted: [0.5810372829437256, 0.6020936965942383, 0.6120520830154419, 0.5939000248908997, 0.6378341317176819]

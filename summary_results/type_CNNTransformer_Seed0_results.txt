@@ -1,0 +1,23 @@
+Experiment Summary
+==================
+Date: 2026-01-16 03:30:37
+Model: CNNTransformer
+Seed: 0
+Dataset: type
+Parameters: {'root_path': '/usr/data/yeqi3/biot_processed_fixed/type', 'dataset': 'type', 'model': 'CNNTransformer', 'seed': 0, 'in_channels': 18, 'n_classes': 2, 'epochs': 50, 'batch_size': 32, 'lr': 0.0001, 'weight_decay': 1e-05, 'num_workers': 4, 'sampling_rate': 200, 'token_size': 200, 'hop_length': 100, 'sample_length': 10, 'pretrain_model_path': '', 'save_dir': '/usr/data/yeqi3/biot_results'}
+
+Metrics (Mean ± Std over 5 Folds):
+accuracy            : 0.5144 ± 0.1400
+roc_auc             : 0.5943 ± 0.0058
+pr_auc              : 0.7130 ± 0.0116
+balanced_accuracy   : 0.5186 ± 0.0247
+cohen_kappa         : 0.0395 ± 0.0517
+f1_weighted         : 0.3989 ± 0.1806
+
+Raw Values per Fold:
+accuracy: [0.6315401792526245, 0.3195876181125641, 0.645987868309021, 0.37002652883529663, 0.604732096195221]
+roc_auc: [0.5980629920959473, 0.5854749083518982, 0.5991036295890808, 0.5995458960533142, 0.5893661975860596]
+pr_auc: [0.7111784219741821, 0.7293792963027954, 0.69349205493927, 0.7172161340713501, 0.7136759757995605]
+balanced_accuracy: [0.5, 0.5, 0.5229365825653076, 0.504935622215271, 0.5651261806488037]
+cohen_kappa: [0.0, 0.0, 0.056566622108221054, 0.007192071061581373, 0.13398097455501556]
+f1_weighted: [0.48891592025756836, 0.15480025112628937, 0.5421361923217773, 0.21078912913799286, 0.597842276096344]

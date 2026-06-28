@@ -1,0 +1,23 @@
+Experiment Summary
+==================
+Date: 2026-01-16 02:39:06
+Model: FFCL
+Seed: 0
+Dataset: read_new
+Parameters: {'root_path': '/usr/data/yeqi3/biot_processed_fixed/read_new', 'dataset': 'read_new', 'model': 'FFCL', 'seed': 0, 'in_channels': 18, 'n_classes': 2, 'epochs': 50, 'batch_size': 32, 'lr': 0.0001, 'weight_decay': 1e-05, 'num_workers': 4, 'sampling_rate': 200, 'token_size': 200, 'hop_length': 100, 'sample_length': 10, 'pretrain_model_path': '', 'save_dir': '/usr/data/yeqi3/biot_results'}
+
+Metrics (Mean ± Std over 5 Folds):
+accuracy            : 0.5387 ± 0.0716
+roc_auc             : 0.6386 ± 0.0263
+pr_auc              : 0.6983 ± 0.0241
+balanced_accuracy   : 0.5296 ± 0.0260
+cohen_kappa         : 0.0558 ± 0.0525
+f1_weighted         : 0.4543 ± 0.0731
+
+Raw Values per Fold:
+accuracy: [0.5633646845817566, 0.4423182010650635, 0.5966748595237732, 0.6239210963249207, 0.4670363664627075]
+roc_auc: [0.6720418334007263, 0.5927538275718689, 0.6449568271636963, 0.6508825421333313, 0.6321511268615723]
+pr_auc: [0.6881551146507263, 0.6734935641288757, 0.678904116153717, 0.7384495139122009, 0.7125935554504395]
+balanced_accuracy: [0.5020326375961304, 0.5258511304855347, 0.5721056461334229, 0.504848837852478, 0.5430527329444885]
+cohen_kappa: [0.004563420545309782, 0.0422205775976181, 0.1498238444328308, 0.01198693085461855, 0.07028606534004211]
+f1_weighted: [0.4087788164615631, 0.36706283688545227, 0.5782070755958557, 0.487393856048584, 0.43000122904777527]

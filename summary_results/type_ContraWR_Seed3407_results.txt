@@ -1,0 +1,23 @@
+Experiment Summary
+==================
+Date: 2026-01-16 03:17:40
+Model: ContraWR
+Seed: 3407
+Dataset: type
+Parameters: {'root_path': '/usr/data/yeqi3/biot_processed_fixed/type', 'dataset': 'type', 'model': 'ContraWR', 'seed': 3407, 'in_channels': 18, 'n_classes': 2, 'epochs': 50, 'batch_size': 32, 'lr': 0.0001, 'weight_decay': 1e-05, 'num_workers': 4, 'sampling_rate': 200, 'token_size': 200, 'hop_length': 100, 'sample_length': 10, 'pretrain_model_path': '', 'save_dir': '/usr/data/yeqi3/biot_results'}
+
+Metrics (Mean ± Std over 5 Folds):
+accuracy            : 0.6666 ± 0.0437
+roc_auc             : 0.6740 ± 0.0297
+pr_auc              : 0.7657 ± 0.0355
+balanced_accuracy   : 0.6020 ± 0.0163
+cohen_kappa         : 0.2210 ± 0.0402
+f1_weighted         : 0.6467 ± 0.0289
+
+Raw Values per Fold:
+accuracy: [0.6958763003349304, 0.7055128812789917, 0.6977255940437317, 0.6423611044883728, 0.5915977954864502]
+roc_auc: [0.7100637555122375, 0.689285159111023, 0.6884968280792236, 0.6571490168571472, 0.62507164478302]
+pr_auc: [0.7766939401626587, 0.8022984862327576, 0.7877896428108215, 0.7620112299919128, 0.6997383236885071]
+balanced_accuracy: [0.6280131340026855, 0.596204400062561, 0.5974804162979126, 0.6094495058059692, 0.5786713361740112]
+cohen_kappa: [0.2824338674545288, 0.22067977488040924, 0.22566428780555725, 0.22079232335090637, 0.1556185781955719]
+f1_weighted: [0.6686857342720032, 0.6738919019699097, 0.6566673517227173, 0.640731155872345, 0.5935626029968262]
